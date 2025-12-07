@@ -1,0 +1,26 @@
+import { Outlet, useLocation } from "react-router";
+import { Header } from "../header/Header";
+import { Footer } from "../footer/Footer";
+import styles from './layout.module.scss';
+import { useMemo } from "react";
+
+
+export function Layout() {
+  const { pathname } = useLocation();
+
+  const activeTab = useMemo(() => {
+    if (pathname.startsWith('/works')) return 'works';
+    if (pathname.startsWith('/')) return 'home';
+    return '';
+  }, [pathname])
+
+  return (
+    <div className={styles.wrapper}>
+      <Header activeTab={activeTab} />
+      <div className={styles.content}>
+        <Outlet />
+      </div>
+      <Footer />
+    </div>
+  )
+}

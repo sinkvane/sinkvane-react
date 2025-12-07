@@ -1,0 +1,20 @@
+@use '@/styles/variables';
+
+.navigationLink {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+
+  transition: color .3s ease, border-color .3s ease;
+
+  &:hover {
+    color: variables.$base-color;
+    border-color: variables.$base-color;
+  }
+}
+
+.navigationLinkActive {
+  border: 1px solid variables.$base-color;
+}

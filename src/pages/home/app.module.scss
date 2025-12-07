@@ -1,0 +1,13 @@
+@use '@/styles/variables';
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$base-color;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.title {
+  font-size: 40px;
+}

@@ -1,0 +1,28 @@
+@use '@/styles/variables';
+@use '@/styles/mixins' as mixins;
+
+.themeBtn {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  // background-color: variables.$white-color;
+  border-radius: 100%;
+  border-radius: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 40px;
+  transition: transform .3s ease;
+
+  @include mixins.flex-center();
+
+  html:not(.dark) & {
+    background-color: variables.$white-color;
+  }
+
+  &:hover {
+    transform: scale(120%);
+  }
+}

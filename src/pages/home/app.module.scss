@@ -2,12 +2,26 @@
 
 .banner {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   background-color: variables.$base-color;
   border-radius: 20px;
   padding: 40px;
 }
 
+.bannerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40%;
+}
+
 .title {
   font-size: 40px;
+  font-family: 'Syne';
+  font-weight: 700;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.8;
 }

@@ -1,11 +1,21 @@
+@mixin theme-changes($bg, $text) {
+  body {
+    background-color: $bg;
+    color: $text;
+  }
+
+  .themeBtn {
+    background-color: $bg;
+  }
+}
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin pseudo(
-  $width: 100%,
+@mixin pseudo($width: 100%,
   $height: 100%,
   $bg: null,
   $content: "",
@@ -14,8 +24,7 @@
   $bottom: null,
   $left: null,
   $display: block,
-  $position: absolute
-) {
+  $position: absolute) {
   content: $content;
   display: $display;
   position: $position;
@@ -23,12 +32,23 @@
   width: $width;
   height: $height;
 
-  @if $bg != null {
+  @if $bg !=null {
     background: $bg;
   }
 
-  @if $top != null { top: $top; }
-  @if $right != null { right: $right; }
-  @if $bottom != null { bottom: $bottom; }
-  @if $left != null { left: $left; }
+  @if $top !=null {
+    top: $top;
+  }
+
+  @if $right !=null {
+    right: $right;
+  }
+
+  @if $bottom !=null {
+    bottom: $bottom;
+  }
+
+  @if $left !=null {
+    left: $left;
+  }
 }

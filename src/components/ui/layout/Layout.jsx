@@ -11,6 +11,8 @@ export function Layout() {
 
   const activeTab = useMemo(() => {
     if (pathname.startsWith('/works')) return 'works';
+    if (pathname.startsWith('/about')) return 'about';
+    if (pathname.startsWith('/socials')) return 'socials';
     if (pathname.startsWith('/')) return 'home';
     return '';
   }, [pathname])

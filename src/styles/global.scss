@@ -1,10 +1,19 @@
 @use './reset';
 @use './variables';
 @use './fonts';
+@use './mixins' as mixins;
 
 
 html {
   box-sizing: border-box;
+
+  &.dark {
+    @include mixins.theme-changes(variables.$black-color, variables.$white-color);
+  }
+
+  &:not(.dark) {
+    @include mixins.theme-changes(variables.$white-color, variables.$black-color);
+  }
 }
 
 *,
@@ -13,12 +22,10 @@ html {
   box-sizing: inherit;
 }
 
-// Базовые глобальные стили, только для body
 body {
   margin: 0;
   padding: 0;
   font-family: 'RobotoMono';
   line-height: 1.4;
-  background-color: variables.$black-color; // здесь можно
   color: variables.$white-color;
 }

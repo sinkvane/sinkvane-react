@@ -3,6 +3,7 @@ import { Header } from "../header/Header";
 import { Footer } from "../footer/Footer";
 import styles from './layout.module.scss';
 import { useMemo } from "react";
+import { ThemeBtn } from "../themeBtn/ThemeBtn";
 
 
 export function Layout() {
@@ -20,6 +21,7 @@ export function Layout() {
       <div className={styles.content}>
         <Outlet />
       </div>
+      <ThemeBtn/>
       <Footer />
     </div>
   )

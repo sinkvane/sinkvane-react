@@ -16,12 +16,14 @@
 }
 
 .title {
+  color: variables.$white-color;
   font-size: 40px;
   font-family: 'Syne';
   font-weight: 700;
 }
 
 .text {
+  color: variables.$white-color;
   font-size: 16px;
   line-height: 1.8;
 }

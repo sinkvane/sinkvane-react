@@ -1,18 +1,21 @@
 @use '@/styles/variables';
 
-.banner {
+.main {
+  position: relative;
   display: flex;
   width: 100%;
-  background-color: variables.$base-color;
+  background-color: variables.$gray-color;
   border-radius: 20px;
   padding: 40px;
+  overflow: hidden;
 }
 
-.bannerInfo {
+.mainInfo {
   display: flex;
   flex-direction: column;
   gap: 40px;
   width: 40%;
+  z-index: 2;
 }
 
 .title {
@@ -26,4 +29,11 @@
   color: variables.$white-color;
   font-size: 16px;
   line-height: 1.8;
+}
+
+.mainImage {
+  position: absolute;
+  z-index: 2;
+  width: 200%;
+  height: auto;
 }

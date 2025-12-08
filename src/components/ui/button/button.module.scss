@@ -1,0 +1,25 @@
+@use '@/styles/variables';
+@use '@/styles/fonts';
+@use '@/styles/mixins' as mixins;
+
+.buttonAnchor {
+  width: auto;
+
+  &>.button {
+    width: 100%;
+  }
+}
+
+.button {
+  background: #000000;
+  background: linear-gradient(300deg, rgba(0, 0, 0, 1) 0%, rgba(1, 71, 255, 1) 100%);
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: 'Syne';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: variables.$white-color;
+  padding: 20px;
+  cursor: pointer;
+}

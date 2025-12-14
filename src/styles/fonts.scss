@@ -1,53 +1,53 @@
 @font-face {
 	font-family: 'BebasNeue';
-	src: url('../../BebasNeue-Regular.ttf') format('truetype'),
-		url('../../BebasNeue-Regular.woff') format('woff'),
-		url('../../BebasNeue-Regular.woff2') format('woff2');
+	src: url('@/assets/fonts/BebasNeue-Regular.ttf') format('truetype'),
+		url('BebasNeue-Regular.woff') format('woff'),
+		url('@/assets/fonts/BebasNeue-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'RobotoMono';
-	src: url('../../RobotoMono-Regular.ttf') format('truetype'),
-		url('../../RobotoMono-Regular.woff2') format('woff'),
-		url('../../RobotoMono-Regular.woff2') format('woff2');
+	src: url('@/assets/fonts/RobotoMono-Regular.ttf') format('truetype'),
+		url('@/assets/fonts/RobotoMono-Regular.woff2') format('woff'),
+		url('@/assets/fonts/RobotoMono-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'RobotoMono';
-	src: url('../../RobotoMono-Medium.ttf') format('truetype'),
-		url('../../RobotoMono-Medium.woff2') format('woff'),
-		url('../../RobotoMono-Medium.woff2') format('woff2');
+	src: url('@/assets/fonts/RobotoMono-Medium.ttf') format('truetype'),
+		url('@/assets/fonts/RobotoMono-Medium.woff2') format('woff'),
+		url('@/assets/fonts/RobotoMono-Medium.woff2') format('woff2');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Syne';
-	src: url('../../Syne-Regular.ttf') format('truetype'),
-		url('../../Syne-Regular.woff') format('woff'),
-		url('../../Syne-Regular.woff2') format('woff2');
+	src: url('@/assets/fonts/Syne-Regular.ttf') format('truetype'),
+		url('@/assets/fonts/Syne-Regular.woff') format('woff'),
+		url('@/assets/fonts/Syne-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Syne';
-	src: url('../../Syne-Medium.ttf') format('truetype'),
-		url('../../Syne-Medium.woff') format('woff'),
-		url('../../Syne-Medium.woff2') format('woff2');
+	src: url('@/assets/fonts/Syne-Medium.ttf') format('truetype'),
+		url('@/assets/fonts/Syne-Medium.woff') format('woff'),
+		url('@/assets/fonts/Syne-Medium.woff2') format('woff2');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Syne';
-	src: url('../../Syne-Bold.ttf') format('truetype'),
-		url('../../Syne-Bold.woff') format('woff'),
-		url('../../Syne-Bold.woff2') format('woff2');
+	src: url('@/assets/fonts/Syne-Bold.ttf') format('truetype'),
+		url('@/assets/fonts/Syne-Bold.woff') format('woff'),
+		url('@/assets/fonts/Syne-Bold.woff2') format('woff2');
 	font-weight: 700;
 	font-style: normal;
 }

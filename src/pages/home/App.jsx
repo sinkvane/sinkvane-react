@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button/Button';
+import { Icon } from '@/components/ui/icon/Icon';
 import styles from '@/pages/home/app.module.scss';
-import { SplineFigure } from '@/components/ui/splineFigure/SplineFigure';
 
 function App() {
 
@@ -12,9 +12,24 @@ function App() {
           <h2 className={styles.text}>Full-cycle web development for founders. <br /> I transform ideas into production-ready, scalable websites and tools, handling every step from UI/UX to deployment.</h2>
           <Button text={'see more'} />
         </div>
-        {/* <div className={styles.mainImage}>
-          <SplineFigure />
-        </div> */}
+      </section>
+      <section className={styles.mainlogotypes}>
+        <Icon
+          name='next'
+          className={styles.svgLogotype}
+        />
+        <Icon
+          name='react'
+          className={styles.svgLogotype}
+        />
+        <Icon
+          name='strapi'
+          className={styles.svgLogotype}
+        />
+        <Icon
+          name='figma'
+          className={styles.svgLogotype}
+        />
       </section>
     </>
   )

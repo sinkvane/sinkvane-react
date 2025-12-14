@@ -1,4 +1,5 @@
 @use '@/styles/variables';
+@use '@/styles/mixins' as mixins;
 
 .main {
   position: relative;
@@ -31,9 +32,14 @@
   line-height: 1.8;
 }
 
-.mainImage {
-  position: absolute;
-  z-index: 2;
-  width: 200%;
-  height: auto;
+.mainlogotypes {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.svgLogotype {
+  @include mixins.svg-theme(variables.$black-color, variables.$white-color );
+  width: 180px;
+  height: 180px;
 }

@@ -1,7 +1,17 @@
+@use '@/styles/variables';
+
 @mixin theme-changes($bg, $text) {
   body {
     background-color: $bg;
     color: $text;
+  }
+}
+
+@mixin svg-theme($light, $dark) {
+  fill: $dark;
+
+  :global(html:not(.dark)) & {
+    fill: $light;
   }
 }
 

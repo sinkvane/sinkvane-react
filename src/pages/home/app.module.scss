@@ -1,18 +1,22 @@
 @use '@/styles/variables';
+@use '@/styles/mixins' as mixins;
 
-.banner {
+.main {
+  position: relative;
   display: flex;
   width: 100%;
-  background-color: variables.$base-color;
+  background-color: variables.$gray-color;
   border-radius: 20px;
   padding: 40px;
+  overflow: hidden;
 }
 
-.bannerInfo {
+.mainInfo {
   display: flex;
   flex-direction: column;
   gap: 40px;
   width: 40%;
+  z-index: 2;
 }
 
 .title {
@@ -26,4 +30,16 @@
   color: variables.$white-color;
   font-size: 16px;
   line-height: 1.8;
+}
+
+.mainlogotypes {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.svgLogotype {
+  @include mixins.svg-theme(variables.$black-color, variables.$white-color );
+  width: 180px;
+  height: 180px;
 }

@@ -1,7 +1,17 @@
+@use '@/styles/variables';
+
 @mixin theme-changes($bg, $text) {
   body {
     background-color: $bg;
     color: $text;
+  }
+}
+
+@mixin svg-theme($light, $dark) {
+  fill: $dark;
+
+  :global(html:not(.dark)) & {
+    fill: $light;
   }
 }
 
@@ -30,6 +40,10 @@
 
   @if $bg !=null {
     background: $bg;
+  }
+
+  @if $top ==null and $right ==null and $bottom ==null and $left ==null {
+    inset: 0;
   }
 
   @if $top !=null {

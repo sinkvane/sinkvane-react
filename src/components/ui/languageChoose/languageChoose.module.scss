@@ -1,0 +1,62 @@
+@use '@/styles/variables';
+@use '@/styles/mixins' as mixins;
+
+.languageChooseWrapper {
+  position: relative;
+
+}
+
+.languageChoose {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.languageChooseIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.languageChoosePopover {
+  position: absolute;
+  z-index: 3;
+  border-radius: 8px;
+  border: 1px solid variables.$base-color;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+
+  &>li:not(:last-child) {
+    border-bottom: 1px solid variables.$base-color;
+  }
+
+  &>li>button {
+    cursor: pointer;
+    padding: 0 10px;
+    margin: 0;
+    @include mixins.flex-center();
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+
+:global(html.dark) :local(.languageChoosePopover) {
+  &>li>button>span {
+    color: variables.$black-color;
+  }
+
+  background-color: variables.$white-color;
+}
+
+:global(html:not(.dark)) :local(.languageChoosePopover) {
+  &>li>button>span {
+    color: variables.$white-color;
+  }
+
+  background-color: variables.$black-color;
+}

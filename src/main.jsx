@@ -5,14 +5,14 @@ import { MainRoutes } from './MainRoutes';
 import { ThemeProvider } from './providers/ThemeProvider';
 import sprite from '@/assets/icons/sprite.svg?raw';
 
+import './i18n';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-
     <div
       dangerouslySetInnerHTML={{ __html: sprite }}
       style={{ display: 'none' }}
     />
-
     <ThemeProvider>
       <MainRoutes />
     </ThemeProvider>

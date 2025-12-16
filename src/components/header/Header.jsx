@@ -1,17 +1,25 @@
 import { Link } from 'react-router'
 import styles from './header.module.scss';
 import { PAGES } from '@/config/pages.config';
-import { NavLink } from '../navLink/NavLink';
+import { NavLink } from '@/components/ui/navLink/NavLink';
+import { useTranslation } from 'react-i18next';
+import { LanguageChoose } from '@/components/ui/languageChoose/LanguageChoose';
 
 export function Header({ activeTab }) {
+
+  const { t } = useTranslation();
+
   return (
     <header className={styles.header}>
-      <Link
-        to={'/'}
-        className={styles.title}
-      >
-        sinkvane
-      </Link>
+      <nav className={styles.headerLeft}>
+        <Link
+          to={'/'}
+          className={styles.title}
+        >
+          sinkvane
+        </Link>
+        <LanguageChoose/>
+      </nav>
       <nav className={styles.navigation}>
         <ul className={styles.navigationWrapper}>
           {PAGES.map(link => (
@@ -20,7 +28,7 @@ export function Header({ activeTab }) {
             >
               <NavLink
                 path={link.path}
-                name={link.name}
+                name={t(link.i18key)}
                 linkKey={link.key}
                 activeTab={activeTab}
               />

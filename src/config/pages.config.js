@@ -7,25 +7,25 @@ export const PAGES = [
   {
     path: '/',
     component: App,
-    name: 'Home',
+    i18key: 'navigation.home',
     key: 'home'
   },
   {
     path: '/works',
     component: Works,
-    name: 'Works',
+    i18key: 'navigation.works',
     key: 'works'
   },
   {
     path: '/about',
     component: About,
-    name: 'About',
+    i18key: 'navigation.about',
     key: 'about'
   },
   {
     path: '/socials',
     component: Socials,
-    name: 'Socials',
+    i18key: 'navigation.socials',
     key: 'socials'
   },
 ];

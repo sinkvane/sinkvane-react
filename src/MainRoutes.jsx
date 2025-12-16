@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router";
-import { Layout } from "./components/ui/layout/Layout";
+import { Layout } from "./components/layout/Layout";
 import { PAGES } from "./config/pages.config";
 
 export function MainRoutes() {

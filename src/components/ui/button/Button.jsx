@@ -1,7 +1,7 @@
 import styles from './button.module.scss';
 import { Link } from 'react-router';
 
-export function Button({ text, anchor }) {
+export function Button({ text, anchor, onClick }) {
   return (
     <>
       {anchor ? (
@@ -9,11 +9,11 @@ export function Button({ text, anchor }) {
           to={anchor}
           className={styles.buttonAnchor}
         >
-          <button className={styles.button}>
+          <button onClick={onClick} className={styles.button}>
             {text}
           </button>
         </Link>) :
-        (<button className={styles.button}>
+        (<button onClick={onClick} className={styles.button}>
           {text}
         </button>)}
     </>

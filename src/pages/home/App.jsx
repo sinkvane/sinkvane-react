@@ -1,16 +1,19 @@
 import { Button } from '@/components/ui/button/Button';
 import { Icon } from '@/components/ui/icon/Icon';
 import styles from '@/pages/home/app.module.scss';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+
+  const { t } = useTranslation();
 
   return (
     <>
       <section className={styles.main}>
         <div className={styles.mainInfo}>
-          <h1 className={styles.title}>From Concept to Live Server</h1>
-          <h2 className={styles.text}>Full-cycle web development for founders. <br /> I transform ideas into production-ready, scalable websites and tools, handling every step from UI/UX to deployment.</h2>
-          <Button text={'see more'} />
+          <h1 className={styles.title}>{t('main.title')}</h1>
+          <h2 className={styles.text}>{t('main.description')}.</h2>
+          <Button text={t('buttons.seemore')} />
         </div>
       </section>
       <section className={styles.mainlogotypes}>

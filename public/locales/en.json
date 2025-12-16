@@ -1,0 +1,20 @@
+{
+  "main": {
+    "title": "From Concept to Live Server",
+    "description": "Full-cycle web development for founders. I transform ideas into production-ready, scalable websites and tools, handling every step from UI/UX to deployment."
+  },
+  "navigation": {
+    "home": "Home",
+    "works": "Works",
+    "about": "About",
+    "socials": "Socials"
+  },
+  "buttons": {
+    "seemore": "See more"
+  },
+  "languages": {
+    "en": "English",
+    "ru": "Russian",
+    "sr": "Serbian"
+  } 
+}

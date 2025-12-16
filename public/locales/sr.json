@@ -1,0 +1,20 @@
+{
+  "main": {
+    "title": "Od ideje do pokrenutog servera",
+    "description": "Kompletan ciklus veb-razvoja za osnivače projekata. Pretvaram ideje u produkciono spremne, skalabilne veb-sajtove i alate, preuzimajući sve korake — od UI/UX dizajna do deploy-a."
+  },
+  "navigation": {
+    "home": "Početna",
+    "works": "Radovi",
+    "about": "O meni",
+    "socials": "Kontakti"
+  },
+  "buttons": {
+    "seemore": "Pogledaj više"
+  },
+  "languages": {
+    "en": "Engleski",
+    "ru": "Ruski",
+    "sr": "Srpski"
+  }
+}

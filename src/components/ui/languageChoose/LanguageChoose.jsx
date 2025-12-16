@@ -5,12 +5,15 @@ import { Icon } from "../icon/Icon";
 import styles from './languageChoose.module.scss';
 import { LANGUAGES } from "@/config/locales.config";
 import { LANGUAGES_ICON } from "@/config/locales.config";
+import { i18nNormalize } from "@/utils/i18nNormalize";
 
 export function LanguageChoose() {
 
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18nNormalize(i18n.language);
+
   const [open, setOpen] = useState(false);
 
-  const { t, i18n } = useTranslation();
 
   return (
 
@@ -21,7 +24,7 @@ export function LanguageChoose() {
       >
         <Icon
           className={styles.languageChooseIcon}
-          name={LANGUAGES_ICON[i18n.language]}
+          name={LANGUAGES_ICON[currentLanguage]}
         />
       </button>
       <Popover open={open} onClose={() => setOpen(false)}>

@@ -1,10 +1,10 @@
 import { Outlet, useLocation } from "react-router";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
-import styles from './layout.module.scss';
 import { useMemo } from "react";
 import { ThemeBtn } from "../ui/themeBtn/ThemeBtn";
-
+import '@/styles/global.scss';
+ 
 
 export function Layout() {
   const { pathname } = useLocation();
@@ -18,9 +18,9 @@ export function Layout() {
   }, [pathname])
 
   return (
-    <div className={styles.wrapper}>
+    <div className='wrapper'>
       <Header activeTab={activeTab} />
-      <div className={styles.content}>
+      <div className='content'>
         <Outlet />
       </div>
       <ThemeBtn/>

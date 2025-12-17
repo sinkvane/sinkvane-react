@@ -3,7 +3,6 @@
 @use './fonts';
 @use './mixins' as mixins;
 
-
 html {
   box-sizing: border-box;
 
@@ -28,4 +27,22 @@ body {
   font-family: 'RobotoMono';
   line-height: 1.4;
   color: variables.$white-color;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column  ;
+  gap: 50px;
 }

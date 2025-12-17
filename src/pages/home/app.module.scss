@@ -32,7 +32,7 @@
   line-height: 1.8;
 }
 
-.mainlogotypes {
+.logotypes {
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -42,4 +42,83 @@
   @include mixins.svg-theme(variables.$black-color, variables.$white-color );
   width: 180px;
   height: 180px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  width: 100%;
+  counter-reset: about-card;
+}
+
+.aboutCards {
+  counter-increment: about-card;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  padding: 60px;
+  background-color: variables.$gray-color;
+  border-radius: 50px;
+
+  &:nth-child(3) {
+    flex-direction: row-reverse;
+
+    &>h3 {
+      text-align: right;
+    }
+
+    &::before {
+      width: auto;
+      left: auto;
+      right: -10px;
+    }
+  }
+
+  &:nth-child(4) {
+    flex-direction: row-reverse;
+
+    &>h3 {
+      text-align: right;
+    }
+
+    &::before {
+      width: auto;
+      left: auto;
+      right: -10px;
+    }
+  }
+
+  &>h3 {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    width: 50%;
+    z-index: 2;
+  }
+
+  &>p {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 18px;
+    width: 50%;
+    z-index: 2;
+  }
+
+  &::before {
+    @include mixins.pseudo();
+    content: counter(about-card, decimal-leading-zero);
+    width: auto;
+    font-family: 'RobotoMono';
+    font-size: 250px;
+    color: variables.$base-color;
+    bottom: -30px;
+    left: -10px;
+    z-index: 1;
+  }
 }

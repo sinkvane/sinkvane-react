@@ -42,9 +42,9 @@
     background: $bg;
   }
 
-  @if $top ==null and $right ==null and $bottom ==null and $left ==null {
-    inset: 0;
-  }
+  // @if $top ==null and $right ==null and $bottom ==null and $left ==null {
+  //   inset: 0;
+  // }
 
   @if $top !=null {
     top: $top;

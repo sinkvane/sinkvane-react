@@ -16,5 +16,23 @@
     "en": "English",
     "ru": "Russian",
     "sr": "Serbian"
-  } 
+  },
+  "whatIdo": {
+    "card1": {
+      "title": "Frontend development",
+      "description": "Building user interfaces with React, focusing on performance, clean code, and scalability"
+    },
+    "card2": {
+      "title": "Websites Turnkey",
+      "description": "Landing pages, business websites, and portfolios with responsive layouts and basic SEO optimization"
+    },
+    "card3": {
+      "title": "Integrations",
+      "description": "Integration of APIs, contact forms, analytics, and multilingual support"
+    },
+    "card4": {
+      "title": "Maintenance & Support",
+      "description": "Bug fixing, ongoing project improvements, and code refactoring support"
+    }
+  }
 }

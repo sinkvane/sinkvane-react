@@ -54,10 +54,11 @@
 
 .aboutCards {
   counter-increment: about-card;
+  display: flex;
   position: relative;
   z-index: 1;
+  justify-content: space-between;
   overflow: hidden;
-  display: flex;
   width: 100%;
   min-height: 300px;
   padding: 60px;
@@ -67,7 +68,7 @@
   &:nth-child(3) {
     flex-direction: row-reverse;
 
-    &>h3 {
+    &>div {
       text-align: right;
     }
 
@@ -81,7 +82,7 @@
   &:nth-child(4) {
     flex-direction: row-reverse;
 
-    &>h3 {
+    &>div {
       text-align: right;
     }
 
@@ -92,12 +93,13 @@
     }
   }
 
-  &>h3 {
+  &>div {
     position: relative;
     font-size: 24px;
+    color: variables.$white-color;
     font-weight: 600;
     width: 50%;
-    z-index: 2;
+    z-index: 3;
   }
 
   &>p {
@@ -106,19 +108,27 @@
     height: 100%;
     align-items: center;
     font-size: 18px;
+    color: variables.$white-color;
     width: 50%;
-    z-index: 2;
+    z-index: 3;
   }
 
   &::before {
-    @include mixins.pseudo();
-    content: counter(about-card, decimal-leading-zero);
+    position: absolute;
     width: auto;
+    height: auto;
+    content: counter(about-card, decimal-leading-zero);
+    font-size: 200px;
+    bottom: -25%;
+    left: 0;
     font-family: 'RobotoMono';
-    font-size: 250px;
     color: variables.$base-color;
-    bottom: -30px;
-    left: -10px;
-    z-index: 1;
+    z-index: 2;
+    color: transparent;
+    background: linear-gradient(0deg,
+        rgba(26, 26, 26, 0) 20%,
+        rgba(1, 71, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 }

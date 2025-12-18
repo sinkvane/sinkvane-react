@@ -16,7 +16,32 @@ function App() {
           <Button text={t('buttons.seemore')} />
         </div>
       </section>
-      <section className={styles.mainlogotypes}>
+
+      <section className={styles.about}>
+
+        <div className={styles.aboutCards}>
+          <div>{t('whatIdo.card1.title')}</div>
+          <p>{t('whatIdo.card1.description')}</p>
+        </div>
+
+        <div className={styles.aboutCards}>
+          <div>{t('whatIdo.card2.title')}</div>
+          <p>{t('whatIdo.card2.description')}</p>
+        </div>
+
+        <div className={styles.aboutCards}>
+          <div>{t('whatIdo.card3.title')}</div>
+          <p>{t('whatIdo.card3.description')}</p>
+        </div>
+
+        <div className={styles.aboutCards}>
+          <div>{t('whatIdo.card4.title')}</div>
+          <p>{t('whatIdo.card4.description')}</p>
+        </div>
+
+      </section>
+
+      <section className={styles.logotypes}>
         <Icon
           name='next'
           className={styles.svgLogotype}
@@ -34,6 +59,7 @@ function App() {
           className={styles.svgLogotype}
         />
       </section>
+
     </>
   )
 }

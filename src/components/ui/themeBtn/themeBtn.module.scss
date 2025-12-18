@@ -2,7 +2,7 @@
 @use '@/styles/mixins' as mixins;
 
 :local(.themeBtn) {
-  position: absolute;
+  position: fixed;
   right: 40px;
   bottom: 40px;
   width: 40px;

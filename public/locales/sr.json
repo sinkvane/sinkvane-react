@@ -1,13 +1,13 @@
 {
   "main": {
-    "title": "Od ideje do pokrenutog servera",
-    "description": "Kompletan ciklus veb-razvoja za osnivače projekata. Pretvaram ideje u produkciono spremne, skalabilne veb-sajtove i alate, preuzimajući sve korake — od UI/UX dizajna do deploy-a."
+    "title": "Od ideje do produkcionog servera",
+    "description": "Web razvoj punog ciklusa za osnivače. Pretvaram ideje u spremne, skalabilne web-sajtove i alate, pokrivajući svaki korak — od UI/UX dizajna do deploy-a."
   },
   "navigation": {
     "home": "Početna",
     "works": "Radovi",
     "about": "O meni",
-    "socials": "Kontakti"
+    "socials": "Društvene mreže"
   },
   "buttons": {
     "seemore": "Pogledaj više"
@@ -16,5 +16,23 @@
     "en": "Engleski",
     "ru": "Ruski",
     "sr": "Srpski"
+  },
+  "whatIdo": {
+    "card1": {
+      "title": "Frontend razvoj",
+      "description": "Izrada korisničkih interfejsa u Reactu sa fokusom na performanse, čist kod i skalabilnost"
+    },
+    "card2": {
+      "title": "Web-sajtovi po sistemu ključ u ruke",
+      "description": "Landing stranice, poslovni sajtovi i portfoliji sa responzivnim dizajnom i osnovnom SEO optimizacijom"
+    },
+    "card3": {
+      "title": "Integracije",
+      "description": "Integracija API-ja, kontakt formi, analitike i podrške za više jezika"
+    },
+    "card4": {
+      "title": "Održavanje i podrška",
+      "description": "Ispravka grešaka, kontinuirano unapređenje projekata i refaktorisanje koda"
+    }
   }
 }

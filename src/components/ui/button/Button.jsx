@@ -1,4 +1,4 @@
-import styles from './button.module.scss';
+import styles from '@/components/ui/button/button.module.scss';
 import { Link } from 'react-router';
 
 export function Button({ text, anchor, onClick }) {

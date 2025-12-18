@@ -1,4 +1,4 @@
-import styles from './navLink.module.scss';
+import styles from '@/components/ui/navLink/navLink.module.scss';
 import { Link } from 'react-router';
 
 export function NavLink({ activeTab, path, name, linkKey }) {

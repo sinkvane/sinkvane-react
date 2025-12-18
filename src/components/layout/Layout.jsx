@@ -1,8 +1,8 @@
 import { Outlet, useLocation } from "react-router";
+import { useMemo } from "react";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
-import { useMemo } from "react";
-import { ThemeBtn } from "../ui/themeBtn/ThemeBtn";
+import { ThemeBtn } from "@/components/ui/themeBtn/ThemeBtn";
 import '@/styles/global.scss';
  
 

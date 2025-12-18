@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Popover } from "@/components/ui/popover/Popover";
-import { Icon } from "../icon/Icon";
-import styles from './languageChoose.module.scss';
+import { Icon } from "@/components/ui/icon/Icon";
+import styles from '@/components/ui/languageChoose/languageChoose.module.scss';
 import { LANGUAGES } from "@/config/locales.config";
 import { LANGUAGES_ICON } from "@/config/locales.config";
 import { i18nNormalize } from "@/utils/i18nNormalize";

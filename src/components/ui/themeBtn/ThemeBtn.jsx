@@ -1,4 +1,4 @@
-import styles from './themeBtn.module.scss';
+import styles from '@/components/ui/themeBtn/themeBtn.module.scss';
 import { useTheme } from "@/hooks/useTheme";
 
 export function ThemeBtn() {

@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-// import styles from './popover.module.scss';
 
 export function Popover({ open, onClose, children }) {
   const ref = useRef(null);

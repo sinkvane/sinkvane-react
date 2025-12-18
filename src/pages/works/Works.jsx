@@ -1,4 +1,4 @@
-import styles from './works.module.scss';
+import styles from '@/pages/works/works.module.scss';
 
 export function Works() {
   return (

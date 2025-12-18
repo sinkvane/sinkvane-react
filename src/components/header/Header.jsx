@@ -1,9 +1,9 @@
 import { Link } from 'react-router'
-import styles from './header.module.scss';
 import { PAGES } from '@/config/pages.config';
 import { NavLink } from '@/components/ui/navLink/NavLink';
-import { useTranslation } from 'react-i18next';
 import { LanguageChoose } from '@/components/ui/languageChoose/LanguageChoose';
+import styles from '@/components/header/header.module.scss';
+import { useTranslation } from 'react-i18next';
 
 export function Header({ activeTab }) {
 

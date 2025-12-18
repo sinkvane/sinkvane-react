@@ -1,6 +1,6 @@
 import Spline from "@splinetool/react-spline";
 import { useState } from "react"
-import styles from './splineFigure.module.scss';
+import styles from '@/components/ui/splineFigure/splineFigure.module.scss';
 
 export function SplineFigure() {
   const [loaded, setLoaded] = useState(false);

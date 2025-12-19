@@ -13,7 +13,10 @@ function App() {
         <div className={styles.mainInfo}>
           <h1 className={styles.title}>{t('main.title')}</h1>
           <h2 className={styles.text}>{t('main.description')}.</h2>
-          <Button text={t('buttons.seemore')} />
+          <div className={styles.mainButtons}>
+            <Button text={t('buttons.seemore')} />
+            <Button anchor={'./works'} text={t('buttons.works')} />
+          </div>
         </div>
       </section>
 

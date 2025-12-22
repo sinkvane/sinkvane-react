@@ -1,39 +1,39 @@
 {
-  "main": {
-    "title": "From Concept to Live Server",
-    "description": "Full-cycle web development for founders. I transform ideas into production-ready, scalable websites and tools, handling every step from UI/UX to deployment."
-  },
-  "navigation": {
-    "home": "Home",
-    "works": "Works",
-    "about": "About",
-    "socials": "Socials"
-  },
-  "buttons": {
-    "seemore": "See more",
-    "works": "Portfolio"
-  },
-  "languages": {
-    "en": "English",
-    "ru": "Russian",
-    "sr": "Serbian"
-  },
-  "whatIdo": {
-    "card1": {
-      "title": "Frontend development",
-      "description": "Building user interfaces with React, focusing on performance, clean code, and scalability"
-    },
-    "card2": {
-      "title": "Websites Turnkey",
-      "description": "Landing pages, business websites, and portfolios with responsive layouts and basic SEO optimization"
-    },
-    "card3": {
-      "title": "Integrations",
-      "description": "Integration of APIs, contact forms, analytics, and multilingual support"
-    },
-    "card4": {
-      "title": "Maintenance & Support",
-      "description": "Bug fixing, ongoing project improvements, and code refactoring support"
-    }
-  }
+	"main": {
+		"title": "From Concept to Live Server",
+		"description": "Full-cycle web development for founders. I transform ideas into production-ready, scalable websites and tools, handling every step from UI/UX to deployment."
+	},
+	"navigation": {
+		"home": "Home",
+		"works": "Works",
+		"about": "About",
+		"socials": "Socials"
+	},
+	"buttons": {
+		"seemore": "See more",
+		"works": "Portfolio"
+	},
+	"languages": {
+		"en": "English",
+		"ru": "Russian",
+		"sr": "Serbian"
+	},
+	"whatIdo": {
+		"card1": {
+			"title": "Frontend development",
+			"description": "Building user interfaces with React, focusing on performance, clean code, and scalability"
+		},
+		"card2": {
+			"title": "Websites Turnkey",
+			"description": "Landing pages, business websites, and portfolios with responsive layouts and basic SEO optimization"
+		},
+		"card3": {
+			"title": "Integrations",
+			"description": "Integration of APIs, contact forms, analytics, and multilingual support"
+		},
+		"card4": {
+			"title": "Maintenance & Support",
+			"description": "Bug fixing, ongoing project improvements, and code refactoring support"
+		}
+	}
 }

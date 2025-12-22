@@ -2,144 +2,142 @@
 @use '@/styles/mixins' as mixins;
 
 .main {
-  position: relative;
-  display: flex;
-  width: 100%;
-  background-color: variables.$gray-color;
-  border-radius: 20px;
-  padding: 40px;
-  overflow: hidden;
+	position: relative;
+	display: flex;
+	width: 100%;
+	background-color: variables.$gray-color;
+	border-radius: 20px;
+	padding: 40px;
+	overflow: hidden;
 }
 
 .mainInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 45%;
-  z-index: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	width: 45%;
+	z-index: 2;
 }
 
 .title {
-  color: variables.$white-color;
-  font-size: 40px;
-  font-family: 'RobotoMono';
-  font-weight: 700;
+	color: variables.$white-color;
+	font-size: 40px;
+	font-family: 'RobotoMono';
+	font-weight: 700;
 }
 
 .text {
-  color: variables.$white-color;
-  font-size: 16px;
-  line-height: 1.8;
+	color: variables.$white-color;
+	font-size: 16px;
+	line-height: 1.8;
 }
 
 .mainButtons {
-  display: flex;
-  gap: 20px;
-  width: 100%;
+	display: flex;
+	gap: 20px;
+	width: 100%;
 
-  &>button,
-  a {
-    width: 100%;
-  }
+	& > button,
+	a {
+		width: 100%;
+	}
 }
 
 .logotypes {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
 }
 
 .svgLogotype {
-  @include mixins.svg-theme(variables.$black-color, variables.$white-color );
-  width: 180px;
-  height: 180px;
+	@include mixins.svg-theme(variables.$black-color, variables.$white-color);
+	width: 180px;
+	height: 180px;
 }
 
 .about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  width: 100%;
-  counter-reset: about-card;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;
+	width: 100%;
+	counter-reset: about-card;
 }
 
 .aboutCards {
-  counter-increment: about-card;
-  display: flex;
-  position: relative;
-  z-index: 1;
-  justify-content: space-between;
-  overflow: hidden;
-  width: 100%;
-  min-height: 300px;
-  padding: 60px;
-  background-color: variables.$gray-color;
-  border-radius: 50px;
+	counter-increment: about-card;
+	display: flex;
+	position: relative;
+	z-index: 1;
+	justify-content: space-between;
+	overflow: hidden;
+	width: 100%;
+	min-height: 300px;
+	padding: 60px;
+	background-color: variables.$gray-color;
+	border-radius: 50px;
 
-  &:nth-child(3) {
-    flex-direction: row-reverse;
+	&:nth-child(3) {
+		flex-direction: row-reverse;
 
-    &>div {
-      text-align: right;
-    }
+		& > div {
+			text-align: right;
+		}
 
-    &::before {
-      width: auto;
-      left: auto;
-      right: -10px;
-    }
-  }
+		&::before {
+			width: auto;
+			left: auto;
+			right: -10px;
+		}
+	}
 
-  &:nth-child(4) {
-    flex-direction: row-reverse;
+	&:nth-child(4) {
+		flex-direction: row-reverse;
 
-    &>div {
-      text-align: right;
-    }
+		& > div {
+			text-align: right;
+		}
 
-    &::before {
-      width: auto;
-      left: auto;
-      right: -10px;
-    }
-  }
+		&::before {
+			width: auto;
+			left: auto;
+			right: -10px;
+		}
+	}
 
-  &>div {
-    position: relative;
-    font-size: 24px;
-    color: variables.$white-color;
-    font-weight: 600;
-    width: 50%;
-    z-index: 3;
-  }
+	& > div {
+		position: relative;
+		font-size: 24px;
+		color: variables.$white-color;
+		font-weight: 600;
+		width: 50%;
+		z-index: 3;
+	}
 
-  &>p {
-    position: relative;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    font-size: 18px;
-    color: variables.$white-color;
-    width: 50%;
-    z-index: 3;
-  }
+	& > p {
+		position: relative;
+		display: flex;
+		height: 100%;
+		align-items: center;
+		font-size: 18px;
+		color: variables.$white-color;
+		width: 50%;
+		z-index: 3;
+	}
 
-  &::before {
-    position: absolute;
-    width: auto;
-    height: auto;
-    content: counter(about-card, decimal-leading-zero);
-    font-size: 200px;
-    bottom: -25%;
-    left: 0;
-    font-family: 'RobotoMono';
-    color: variables.$base-color;
-    z-index: 2;
-    color: transparent;
-    background: linear-gradient(0deg,
-        rgba(26, 26, 26, 0) 20%,
-        rgba(1, 71, 255, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
+	&::before {
+		position: absolute;
+		width: auto;
+		height: auto;
+		content: counter(about-card, decimal-leading-zero);
+		font-size: 200px;
+		bottom: -25%;
+		left: 0;
+		font-family: 'RobotoMono';
+		color: variables.$base-color;
+		z-index: 2;
+		color: transparent;
+		background: linear-gradient(0deg, rgba(26, 26, 26, 0) 20%, rgba(1, 71, 255, 1) 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+	}
 }

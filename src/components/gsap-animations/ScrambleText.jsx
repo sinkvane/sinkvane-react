@@ -11,7 +11,7 @@ export default function ScrambleText({
   text,
   as = 'div',
   className = '',
-  duration = 1,
+  duration = 2,
   speed = 2,
   chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
 }) {

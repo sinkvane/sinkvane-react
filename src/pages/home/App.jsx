@@ -2,10 +2,18 @@ import { Button } from '@/components/ui/button/Button';
 import { Icon } from '@/components/ui/icon/Icon';
 import styles from '@/pages/home/app.module.scss';
 import { useTranslation } from 'react-i18next';
-import ScrambleText from '@/components/gsap-animations/ScrambleText'; // <- важно
-
+import ScrambleText from '@/components/gsap-animations/ScrambleText';
+import { useRevealOnScroll } from '@/hooks/useRevealOnScroll';
+import { useRef } from 'react';
 
 function App() {
+
+  const aboutRef = useRef(null);
+
+  useRevealOnScroll(aboutRef, {
+    selector: `.${styles.aboutCards}`
+  });
+
   const { t } = useTranslation();
 
   return (
@@ -18,7 +26,10 @@ function App() {
         </div>
       </section>
 
-      <section className={styles.about}>
+      <section
+        ref={aboutRef}
+        className={styles.about}
+      >
 
         <div className={styles.aboutCards}>
           <ScrambleText

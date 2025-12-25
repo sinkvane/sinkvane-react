@@ -11,11 +11,11 @@ export default defineConfig({
       clientPort: 5173 // Попробуйте указать порт для HMR
     }
   },
+  base: process.env.VITE_BASE_URL || '/',
   plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src")
     }
-  },
-  base: '/sinkvane-react/'
+  }
 })

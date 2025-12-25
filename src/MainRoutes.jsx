@@ -4,7 +4,7 @@ import { PAGES } from "./config/pages.config";
 
 export function MainRoutes() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route element={<Layout />}>
           {PAGES.map(route => (

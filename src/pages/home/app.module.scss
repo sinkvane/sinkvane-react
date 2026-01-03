@@ -5,6 +5,7 @@
   position: relative;
   display: flex;
   width: 100%;
+  min-height: calc(100dvh - 140px);
   background-color: variables.$gray-color;
   border-radius: 20px;
   padding: 40px;
@@ -22,8 +23,8 @@
 .title {
   color: variables.$white-color;
   font-size: 40px;
-  font-family: 'RobotoMono';
-  font-weight: 700;
+  font-family: 'Unbounded';
+  font-weight: 400;
 }
 
 .text {
@@ -37,7 +38,7 @@
   gap: 20px;
   width: 100%;
 
-  &>button,
+  & > button,
   a {
     width: 100%;
   }
@@ -50,7 +51,7 @@
 }
 
 .svgLogotype {
-  @include mixins.svg-theme(variables.$black-color, variables.$white-color );
+  @include mixins.svg-theme(variables.$black-color, variables.$white-color);
   width: 180px;
   height: 180px;
 }
@@ -66,6 +67,8 @@
 .aboutCards {
   counter-increment: about-card;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
   position: relative;
   z-index: 1;
   justify-content: space-between;
@@ -79,7 +82,7 @@
   &:nth-child(3) {
     flex-direction: row-reverse;
 
-    &>div {
+    & > div {
       text-align: right;
     }
 
@@ -93,7 +96,7 @@
   &:nth-child(4) {
     flex-direction: row-reverse;
 
-    &>div {
+    & > div {
       text-align: right;
     }
 
@@ -104,21 +107,22 @@
     }
   }
 
-  &>div {
+  & > div {
     position: relative;
-    font-size: 24px;
+    font-size: 22px;
     color: variables.$white-color;
-    font-weight: 600;
+    font-family: 'Unbounded';
+    font-weight: 400;
     width: 50%;
     z-index: 3;
   }
 
-  &>p {
+  & > p {
     position: relative;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    font-size: 18px;
+    //display: flex;
+    //height: 100%;
+    //align-items: center;
+    font-size: 16px;
     color: variables.$white-color;
     width: 50%;
     z-index: 3;
@@ -137,8 +141,8 @@
     z-index: 2;
     color: transparent;
     background: linear-gradient(0deg,
-        rgba(26, 26, 26, 0) 20%,
-        rgba(1, 71, 255, 1) 100%);
+            rgba(26, 26, 26, 0) 20%,
+            rgba(1, 71, 255, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
   }

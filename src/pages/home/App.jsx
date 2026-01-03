@@ -2,8 +2,7 @@ import { Button } from '@/components/ui/button/Button';
 import { Icon } from '@/components/ui/icon/Icon';
 import styles from '@/pages/home/app.module.scss';
 import { useTranslation } from 'react-i18next';
-import ScrambleText from '@/components/gsap-animations/ScrambleText'; // <- важно
-
+import ScrambleText from '@/components/gsap-animations/ScrambleText';
 
 function App() {
   const { t } = useTranslation();
